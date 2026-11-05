@@ -1,0 +1,204 @@
+/* Cores do cliente */
+:root {
+  --bg-principal: #FDFBF0; /* Fundo geral amarelo bem claro */
+  --verde-escuro: #4A5B3E; /* Cor dos cards e botões */
+  --verde-card: #5B6D4A; 
+  --amarelo-card: #F1EBC3; /* Fundo do card da biblioteca */
+  --laranja-icone: #D3975A;
+  --texto-escuro: #2C3524;
+  --texto-claro: #FFFFFF;
+}
+
+/* Reset Básico para a seção */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif; /* Ajuste para a fonte usada no projeto */
+}
+
+body {
+  background-color: var(--bg-principal);
+  color: var(--texto-escuro);
+}
+
+/* --- CONHEÇA O PORTAL --- */
+.conheca-portal {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portal-header h2 {
+  font-size: 2rem;
+  color: var(--texto-escuro);
+  margin-bottom: 0.5rem;
+}
+
+.portal-header p {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card-feature {
+  background-color: var(--verde-card);
+  color: var(--texto-claro);
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-feature .icon-wrapper {
+  margin-bottom: 1rem;
+}
+
+.card-feature h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.card-feature p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* --- BIBLIOTECA E SOBRE O PROJETO --- */
+.biblioteca-section, .sobre-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.biblioteca-card, .sobre-card {
+  display: flex;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.biblioteca-card {
+  background-color: var(--amarelo-card);
+}
+
+.sobre-card {
+  background-color: var(--verde-escuro);
+  color: var(--texto-claro);
+}
+
+.img-container {
+  flex: 1;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.conteudo-texto {
+  flex: 1;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.biblioteca-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.sobre-card h3 {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  color: #E2E2E2;
+}
+
+.sobre-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.conteudo-texto p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.btn-verde {
+  background-color: var(--verde-escuro);
+  color: var(--texto-claro);
+  padding: 0.8rem 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn-verde:hover {
+  background-color: #38462f;
+}
+
+/* Controles de Visibilidade Desktop/Mobile */
+.mobile-only { display: none; }
+.mobile-only-img { display: none; }
+
+/* --- RESPONSIVIDADE (MOBILE) --- */
+@media (max-width: 768px) {
+  .conheca-portal {
+    padding: 2rem 1rem;
+  }
+  
+  /* Ajuste para mobile */
+  .card-feature {
+    width: 100%;
+    flex-direction: row;
+    padding: 1.5rem;
+    text-align: left;
+    align-items: center;
+  }
+
+  .card-feature .icon-wrapper {
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+  }
+  
+  /* Ajuste Biblioteca e Sobre */
+  .biblioteca-card, .sobre-card {
+    flex-direction: column;
+  }
+  
+  .conteudo-texto {
+    padding: 2rem 1.5rem;
+  }
+  
+  /* Troca as imagens de ordem no mobile */
+  .desktop-only { display: none; }
+  .desktop-only-img { display: none; }
+  .mobile-only { display: block; margin-bottom: 1rem;}
+  .mobile-only-img { display: block; }
+}
