@@ -4,12 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legados Culturais</title>
-
-    <link rel="stylesheet" href="site.css">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+            <a href="index.html"><img class="logo" src="img/Logo - Legados Culturais.png" alt="Logo do site"></a>
+        <nav class="desktop-menu">
+            <ul class="navbar">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#biblioteca">Biblioteca</a></li>
+                <li><a href="solucoes.html">Soluções</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="botoes">
+            <a href="#" class="entrar">Entrar</a>
+            <a href="#" class="cadastrar">Cadastrar</a>
+        </div>
 
- <!-- INICIO DA ARI O MEU COMEÇA AQUI -->
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    
+    <nav class="mobile-menu">
+      <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#biblioteca">Biblioteca</a></li>
+              <li><a href="solucoes.html">Soluções</a></li>
+              <li><a href="contato.html">Contato</a></li>
+      </ul>
+            <div class="botoes-mobile">
+            <a href="#" class="entrar">Entrar</a>
+            <a href="#" class="cadastrar">Cadastrar</a>
+        </div>
+    </nav>
+  </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>PATRIMÔNIO CULTURAL</h1>
+                <div class="hero-card">
+                <h2>Legado Cultural</h2>
+                <p>Conhecimento, pesquisa e preservação.</p>
+                <a href="#biblioteca" class="botao-biblioteca">Explorar Biblioteca</a>
+                </div>
+            </div>
+        </section>
+
 <!-- CONHEÇA O PORTAL -->
 <section class="conheca-portal">
   <div class="portal-header">
@@ -58,7 +112,7 @@
   <h2 class="section-title desktop-only">Biblioteca</h2>
   <div class="biblioteca-card">
     <div class="img-container">
-      <img src="imagens/livros.jpg" alt="Livros na estante da biblioteca">
+      <img src="img/livros.jpg" alt="Livros na estante da biblioteca">
     </div>
     <div class="conteudo-texto">
       <h2 class="section-title mobile-only">Biblioteca</h2>
@@ -73,7 +127,7 @@
 <section class="sobre-section">
   <div class="sobre-card">
     <div class="img-container mobile-only-img">
-      <img src="imagens/bibi.jpg" alt="Pessoa manuseando documentos antigos">
+      <img src="img/bibi.jpg" alt="Pessoa manuseando documentos antigos">
     </div>
     <div class="conteudo-texto dark-bg">
       <h3>SOBRE O PROJETO</h3>
@@ -81,7 +135,7 @@
       <p>Um texto curto sobre a origem e o propósito do projeto bem aqui ó</p>
     </div>
     <div class="img-container desktop-only-img">
-      <img src="imagens/bibi.jpg" alt="Pessoa manuseando documentos antigos">
+      <img src="img/bibi.jpg" alt="Pessoa manuseando documentos antigos">
     </div>
   </div>
 </section>
@@ -275,7 +329,7 @@
   <footer class="site-footer">
     <div class="footer-content">
       <div class="footer-logo-col">
-        <img src="logo.png" alt="Legados Culturais Logo" class="footer-logo">
+        <img src="img/Logo - Legados Culturais.png" alt="Legados Culturais Logo" class="footer-logo">
         <p>Um portal de referência sobre patrimônio cultural.</p>
       </div>
       

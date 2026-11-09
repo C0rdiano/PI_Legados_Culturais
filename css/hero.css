@@ -1,0 +1,98 @@
+.hero {
+    background-color: #FBF6D3;
+    padding: 2rem 0;
+    position: relative;
+    bottom: 140px;
+    height: 600px;
+}
+
+.hero-content {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    top: 180px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+
+.hero-card{
+    background-color: #606C38;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #FEFAE0;
+    font-weight: 600;
+    height: 250px;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+.botao-biblioteca {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #DDA15E;
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+.botao-biblioteca:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+
+@media (max-width: 768px) {
+    .hero {
+        height: 400px;
+    }
+
+    .hero-content {
+        top: 100px;
+         height: 200px;
+    }
+
+    .hero-content h1 {
+        display: none;
+    }
+
+    .hero-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-card{
+        width: 80%;
+    }
+}
