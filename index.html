@@ -108,7 +108,7 @@
 </section>
 
 <!-- BIBLIOTECA -->
-<section class="biblioteca-section">
+<section class="biblioteca-section" id="biblioteca">
   <h2 class="section-title desktop-only">Biblioteca</h2>
   <div class="biblioteca-card">
     <div class="img-container">
@@ -124,7 +124,7 @@
 </section>
 
 <!-- SOBRE O PROJETO -->
-<section class="sobre-section">
+<section class="sobre-section" id="sobre">
   <div class="sobre-card">
     <div class="img-container mobile-only-img">
       <img src="img/bibi.jpg" alt="Pessoa manuseando documentos antigos">
@@ -180,153 +180,17 @@
   </section>
 
   <!-- FALE CONOSCO-->
-  <section class="banner-chamada-container">
+  <section class="contato-inicio-container">
     <div class="banner-box">
       <h2>Fale Conosco</h2>
       <h3>Tem um projeto ou quer saber mais?</h3>
       <p>Entre em contato para conversar sobre projetos, consultorias e possibilidade de colaborações</p>
-      <a href="#contato" class="btn btn-escuro">Entre em contato</a>
+      <a href="contato.html" class="btn btn-escuro">Entre em contato</a>
     </div>
-  </section>
-
-  <!--  SOLUÇÕES -->
-  <section class="solucoes-container" id="solucoes">
-    <div class="section-header">
-      <h2>Soluções</h2>
-      <p>Pesquisa, consultoria e projetos para preservar e compartilhar o patrimônio cultural</p>
-    </div>
-
-    <!-- Card: Pesquisa -->
-    <article class="solucao-card light-card">
-      <div class="card-img-placeholder">
-        <span>Foto</span>
-      </div>
-      <div class="card-content">
-        <div class="card-title">
-          <i class="icon-search">🔍</i>
-          <h3>Pesquisa</h3>
-        </div>
-        <p class="card-desc">Investigação e produção de conhecimento sobre acervos, memórias e bens culturais.</p>
-        
-        <div class="card-details">
-          <div class="detail-column">
-            <h4>O que entregamos</h4>
-            <ul>
-              <li>Levantamento histórico</li>
-              <li>Dossiês e relatórios</li>
-              <li>Catalogação de acervos</li>
-            </ul>
-          </div>
-          <div class="detail-column">
-            <h4>Para quem</h4>
-            <p>Instituições, museus, pesquisadores e famílias.</p>
-          </div>
-        </div>
-        <a href="#contato" class="btn btn-green">Solicitar Orçamento</a>
-      </div>
-    </article>
-
-    <!-- Card: Consultoria -->
-    <article class="solucao-card dark-card reverse-layout">
-      <div class="card-content">
-        <div class="card-title">
-          <i class="icon-search">🔍</i>
-          <h3>Consultoria</h3>
-        </div>
-        <p class="card-desc">Orientação técnica para conservar, documentar e valorizar o patrimônio.</p>
-        
-        <div class="card-details">
-          <div class="detail-column">
-            <h4>O que entregamos</h4>
-            <ul>
-              <li>Diagnóstico de acervo</li>
-              <li>Plano de preservação</li>
-              <li>Apoio em editais e leis de incentivo</li>
-            </ul>
-          </div>
-          <div class="detail-column">
-            <h4>Para quem</h4>
-            <p>Órgãos públicos, empresas e organizações culturais.</p>
-          </div>
-        </div>
-        <a href="#contato" class="btn btn-orange">Solicitar Orçamento</a>
-      </div>
-      <div class="card-img-placeholder dark-placeholder">
-        <span>Foto</span>
-      </div>
-    </article>
-
-    <!-- Card: Projetos -->
-    <article class="solucao-card light-card">
-      <div class="card-img-placeholder">
-        <span>Foto</span>
-      </div>
-      <div class="card-content">
-        <div class="card-title">
-          <i class="icon-search">🔍</i>
-          <h3>Projetos</h3>
-        </div>
-        <p class="card-desc">Criação e execução de projetos culturais, da ideia à entrega ao público.</p>
-        
-        <div class="card-details">
-          <div class="detail-column">
-            <h4>O que entregamos</h4>
-            <ul>
-              <li>Exposições e publicações</li>
-              <li>Ações educativas</li>
-              <li>Gestão e prestação de contas</li>
-            </ul>
-          </div>
-          <div class="detail-column">
-            <h4>Para quem</h4>
-            <p>Instituições, comunidades e patrocinadores.</p>
-          </div>
-        </div>
-        <a href="#contato" class="btn btn-green">Solicitar Orçamento</a>
-      </div>
-    </article>
-  </section>
-
-  <!-- CONTATO -->
-  <section class="contato-container" id="contato">
-    <div class="section-header">
-      <h2>Fale conosco</h2>
-      <p>Entre em contato com nossa equipe</p>
-    </div>
-
-    <form class="contato-form">
-      <div class="form-group">
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" required>
-      </div>
-      
-      <div class="form-group">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
-      </div>
-      
-      <div class="form-group">
-        <label for="assunto">Assunto</label>
-        <select id="assunto" name="assunto" required>
-          <option value="" disabled selected>Selecione</option>
-          <option value="pesquisa">Pesquisa</option>
-          <option value="consultoria">Consultoria</option>
-          <option value="projetos">Projetos</option>
-          <option value="outros">Outros</option>
-        </select>
-      </div>
-      
-      <div class="form-group">
-        <label for="mensagem">Mensagem</label>
-        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte um pouco sobre o seu projeto" required></textarea>
-      </div>
-      
-      <button type="submit" class="btn btn-orange btn-submit">Enviar Mensagem</button>
-    </form>
   </section>
 
   <!--RODAPÉ -->
-  <footer class="site-footer">
+  <footer class="Inicial-footer">
     <div class="footer-content">
       <div class="footer-logo-col">
         <img src="img/Logo - Legados Culturais.png" alt="Legados Culturais Logo" class="footer-logo">

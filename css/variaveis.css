@@ -1,0 +1,23 @@
+:root {
+  --bg-principal: #FDFBF0; /* Fundo geral amarelo bem claro */
+  --verde-escuro: #4A5B3E; /* Cor dos cards e botões */
+  --verde-card: #5B6D4A; 
+  --amarelo-card: #F1EBC3; /* Fundo do card da biblioteca */
+  --laranja-icone: #D3975A;
+  --texto-escuro: #2C3524;
+  --texto-claro: #FFFFFF;
+}
+
+:root {
+  --bg-color: #FAF6E9;
+  --card-light-bg: #F4EFC6;
+  --card-dark-bg: #576A3D;
+  --btn-green: #6C7F4D;
+  --btn-dark: #3B4A28;
+  --btn-orange: #DA9F56;
+  --form-bg: #40502A;
+  --text-dark: #2C2C2C;
+  --text-light: #FFFFFF;
+  --line-color: #D1CDBC;
+  --font-main: 'Arial', sans-serif;
+}

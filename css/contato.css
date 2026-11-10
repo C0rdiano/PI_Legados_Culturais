@@ -1,0 +1,40 @@
+.contato-inicio-container {
+ position: relative;
+  bottom: 160px;
+  max-width: 1000px;
+  margin: 0 auto 60px;
+  padding: 0 20px;
+}
+
+.banner-box {
+  background-color: var(--card-dark-bg);
+  border-radius: 15px;
+  padding: 50px 30px;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.banner-box h2 {
+  font-family: 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.banner-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.banner-box p {
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.Inicial-footer {
+  max-width: 1000px;
+  margin: -160px auto 0;
+  padding: 40px 20px 20px;
+  border-top: 1px solid var(--line-color);
+}

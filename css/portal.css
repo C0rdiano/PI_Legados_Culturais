@@ -1,0 +1,80 @@
+.conheca-portal {
+  position: relative;
+  bottom: 160px;
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portal-header h2 {
+  font-size: 2rem;
+  color: var(--texto-escuro);
+  margin-bottom: 0.5rem;
+}
+
+.portal-header p {
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card-feature {
+  background-color: var(--verde-card);
+  color: var(--texto-claro);
+  border-radius: 12px;
+  padding: 2.5rem 1.5rem;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card-feature .icon-wrapper {
+  margin-bottom: 1rem;
+}
+
+.card-feature h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.card-feature p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .conheca-portal {
+    padding: 2rem 1rem;
+  }
+  .img-container img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+  
+  /* Ajuste para mobile */
+  .card-feature {
+    width: 100%;
+    flex-direction: row;
+    padding: 1.5rem;
+    text-align: left;
+    align-items: center;
+  }
+
+  .card-feature .icon-wrapper {
+    margin-bottom: 0;
+    margin-right: 1.5rem;
+  }
+}

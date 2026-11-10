@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legados Culturais</title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+            <a href="index.html"><img class="logo" src="img/Logo - Legados Culturais.png" alt="Logo do site"></a>
+        <nav class="desktop-menu">
+            <ul class="navbar">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#biblioteca">Biblioteca</a></li>
+                <li><a href="solucoes.html">Soluções</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="botoes">
+            <a href="#" class="entrar">Entrar</a>
+            <a href="#" class="cadastrar">Cadastrar</a>
+        </div>
+
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+    <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    
+    <nav class="mobile-menu">
+      <ul>
+              <li><a href="index.html">Início</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#biblioteca">Biblioteca</a></li>
+              <li><a href="solucoes.html">Soluções</a></li>
+              <li><a href="contato.html">Contato</a></li>
+      </ul>
+            <div class="botoes-mobile">
+            <a href="#" class="entrar">Entrar</a>
+            <a href="#" class="cadastrar">Cadastrar</a>
+        </div>
+    </nav>
+  </div>
+    </header>
+
+    <main>
+
+ 
+
+  <!-- CONTATO -->
+  <section class="contato-container" id="contato">
+    <div class="section-header">
+      <h2>Fale conosco</h2>
+      <p>Entre em contato com nossa equipe</p>
+    </div>
+
+    <form class="contato-form">
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite o seu nome completo" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="assunto">Assunto</label>
+        <select id="assunto" name="assunto" required>
+          <option value="" disabled selected>Selecione</option>
+          <option value="pesquisa">Pesquisa</option>
+          <option value="consultoria">Consultoria</option>
+          <option value="projetos">Projetos</option>
+          <option value="outros">Outros</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte um pouco sobre o seu projeto" required></textarea>
+      </div>
+      
+      <button type="submit" class="btn btn-orange btn-submit">Enviar Mensagem</button>
+    </form>
+  </section>
+
+  <!--RODAPÉ -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div class="footer-logo-col">
+        <img src="img/Logo - Legados Culturais.png" alt="Legados Culturais Logo" class="footer-logo">
+        <p>Um portal de referência sobre patrimônio cultural.</p>
+      </div>
+      
+      <div class="footer-nav-col">
+        <h4>NAVEGAÇÃO</h4>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#biblioteca">Biblioteca</a></li>
+          <li><a href="#solucoes">Soluções</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-contact-col">
+        <h4>CONTATO</h4>
+        <ul>
+          <li>✉ contato@legadosculturais.com.br</li>
+          <li>📞 (11) 99999-0000</li>
+          <li>📍 São Paulo, Brasil</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-social">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2026 Legados Culturais</p>
+      <a href="#">Política de privacidade</a>
+    </div>
+  </footer>
+
+</body>
+</html>
