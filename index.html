@@ -54,13 +54,27 @@
 
         <!-- HERO -->
         <section class="hero">
+            <div class="hero-slides" aria-hidden="true">
+                <img class="hero-slide is-active" src="img/carrossel/pexels-anselmo-machado-779689504-40122704.jpg" alt="">
+                <img class="hero-slide" src="img/carrossel/pexels-bruno-cardoso-2147854904-29794800.jpg" alt="">
+                <img class="hero-slide" src="img/carrossel/pexels-pedro-rebelo-pereira-337908766-20167099.jpg" alt="">
+            </div>
             <div class="hero-content">
                 <h1>PATRIMÔNIO CULTURAL</h1>
                 <div class="hero-card">
-                <h2>Legado Cultural</h2>
-                <p>Conhecimento, pesquisa e preservação.</p>
-                <a href="#biblioteca" class="botao-biblioteca">Explorar Biblioteca</a>
+                    <h2>Legado Cultural</h2>
+                    <p>Conhecimento, pesquisa e preservação.</p>
+                    <a href="#biblioteca" class="botao-biblioteca">Explorar Biblioteca</a>
                 </div>
+            </div>
+            <div class="hero-controls" aria-label="Controles do carrossel">
+                <button type="button" class="hero-control" id="hero-prev" aria-label="Imagem anterior">&#10094;</button>
+                <div class="hero-indicators" aria-label="Escolher imagem">
+                    <button type="button" class="hero-indicator is-active" aria-label="Mostrar imagem 1" aria-pressed="true"></button>
+                    <button type="button" class="hero-indicator" aria-label="Mostrar imagem 2" aria-pressed="false"></button>
+                    <button type="button" class="hero-indicator" aria-label="Mostrar imagem 3" aria-pressed="false"></button>
+                </div>
+                <button type="button" class="hero-control" id="hero-next" aria-label="Próxima imagem">&#10095;</button>
             </div>
         </section>
 
@@ -228,6 +242,6 @@
       <a href="#">Política de privacidade</a>
     </div>
   </footer>
-
+  <script src="js/carrossel.js"></script>
 </body>
 </html>
