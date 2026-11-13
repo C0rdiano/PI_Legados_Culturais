@@ -16,7 +16,6 @@
 
 .banner-box h2 {
   font-family: 'Times New Roman', serif;
-  font-style: italic;
   font-size: 2rem;
   font-weight: normal;
   margin-bottom: 20px;
@@ -29,6 +28,7 @@
 
 .banner-box p {
   max-width: 600px;
+  line-height: 1.5;
   margin: 0 auto 30px;
 }
 
